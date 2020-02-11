@@ -1,22 +1,64 @@
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translatey(60px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translatey(-60px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 * {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* ---LANDING SECTION--- */
-#landing {
-  width: 100%;
-  height: 100vh;
-  background-image: url('../img/run8.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: black;
+body {
+  background-color: black;
 }
 
+/* ---LANDING SECTION--- */
+
 /* Navbar */
-.navbar-light {
-  font-weight: 600;
-  text-transform: uppercase;
+.navbar-expand-lg {
+  background-color: black;
 }
 
 .navbar-light .navbar-brand {
@@ -29,5 +71,77 @@
 
 .navbar-light .navbar-nav .nav-link {
   color: black;
-} /* ---Navbar--- */
+} 
 
+
+#title-top {
+  animation-name: moveToRight;
+  animation-duration: 1.5s;
+}
+
+#title-bottom {
+  animation-name: moveToLeft;
+  animation-duration: 1.5s;
+}
+
+/* /Navbar */
+
+#landing {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/landing.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+#lb-top {
+  animation-name: moveDown;
+  animation-duration: 1.5s;
+}
+
+#lb-bottom .col {
+  opacity: 0;
+  animation: moveUp 1.5s ease-in-out 0s forwards;
+}
+#lb-bottom .lbSecond {
+  animation-delay: .4s;
+}
+#lb-bottom .lbThird {
+  animation-delay: .8s;
+}
+#lb-bottom .lbFourth {
+  animation-delay: 1.2s;
+}
+
+
+/* ---LANDING SECTION END--- */
+
+
+/*  --- VideoStats SECTION--- */
+#video-stats {
+  border: 2px solid red;
+  /* height: 1200px; */
+}
+
+.video-stats-top iframe {
+  pointer-events: none;
+}
+
+
+
+#stats-table {
+  max-width: 600px;
+  background-color: black;
+} /*  VideoStats Section */
+
+
+/* ---Showcase Section--- */
+.showcase {
+  border: 2px solid blue;
+}
+
+.showcase-img {
+border: 2px solid green;
+}

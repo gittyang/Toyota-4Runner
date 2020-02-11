@@ -16,7 +16,7 @@
     <!-- landing-top -->
     <div id="landing-top">
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,37 +53,39 @@
         </div>
       </nav>
       <!-- /navbar -->
-      <h2 class ="text-center display-5 mb-0" id="title">Toyota</h2>
-      <h1 class ="text-center display-5 font-weight-bold" id="subtitle">4Runner</h1>
+      <h1 class ="text-center display-5 mb-0" id="title-top">Toyo</h1>
+      <h1 class ="text-center display-5 font-weight-bold" id="title-bottom">4Runner</h1>
     </div> <!-- /landing-top -->
 
     <!-- landing bottom -->
     <div class= "text-white" id="landing-bottom">
       <div class="container col-lg-">
-
-        <div class="row">
+        <div class="row" id="lb-top">
           <div class="col">
             <p>The most reliable and adventurous SUV in the world, with astonishing power, functionality and performance.</p>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col">
+        <div class="row" id="lb-bottom">
+          <div class="col lbFirst">
             <h4 class="p-top font-weight-bold mb-0">
               <i class="fas fa-tachometer-alt"></i>
               270HP
             </h4>
             <p class="p-bot mb-0">4.0L V-6 Engine</p>
           </div>
-          <div class="col">
+
+          <div class="col lbSecond">
             <h4 class="p-top font-weight-bold mb-0">5,000 Lbs</h4>
             <p class="p-bot mb-0">Towing Capacity</p>
           </div>
-          <div class="col">
+
+          <div class="col lbThird">
             <h4 class="p-top font-weight-bold mb-0">5-Spd Auto W/ OD</h4>
             <p class="p-bot mb-0">Transmission</p>
           </div>
-          <div class="col align-self-center">
+
+          <div class="col align-self-center lbFourth">
               <button type="button" class="btn btn-outline-light btn-block px-0 rounded-pill">Reserve Now</button>
           </div>
         </div>
@@ -98,8 +100,143 @@
 
       </div>
     </div> <!-- landing bottom -->
+  </section>   <!-- Landing Page Section -->
 
-  </section>
+
+<!-- Video Stats Section -->
+<section id="video-stats">
+  <!-- Top -->
+  <div class="video-stats-top">
+
+    <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/MJc_O-Bddd4?rel=0;&autoplay=1&mute=1&loop=1&playlist=iG9CE55wbtY">
+    </iframe> -->
+
+    <!-- <div class="embed-responsive embed-responsive-21by9">
+      <video class="video-fluid z-depth-1" autoplay loop controls muted>
+        <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" />
+      </video>
+    </div> -->
+
+    <div class="embed-responsive embed-responsive-21by9 my-5">
+      <video class="video-fluid z-depth-1" autoplay loop controls muted>
+        <iframe class="embed-reponsive-item" src="https://www.youtube.com/embed/MJc_O-Bddd4"></iframe>
+      </video>
+    </div>
+  </div> <!-- /Top -->
+
+  <!-- Bottom -->
+  <div class="video-stats-bottom">
+    <table class="table table-dark text-center container-fluid my-5" id="stats-table">
+      <thead>
+        <tr>
+          <th colspan="2" class="text-left border-0 font-weight-bold">Specs</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td class="col-left text-left">Engine</td>
+          <td class="col-right text-right font-weight-bold">4.0L V-6</td>
+        </tr>
+
+        <tr>
+          <td class="col-left text-left">Transmission</td>
+          <td class="col-right text-right font-weight-bold">5-Speed Auto w/ Over Drive</td>
+        </tr>
+
+        <tr>
+          <td class="col-left text-left">Horsepower</td>
+          <td class="col-right text-right font-weight-bold">270 @ 5,600 RPM</td>
+        </tr>
+
+        <tr>
+          <td class="col-left text-left">Torque</td>
+          <td class="col-right text-right font-weight-bold">278 @ 4,400 RPM</td>
+        </tr>
+
+        <tr>
+          <td class="col-left text-left">Acceleration 0-60 mph</td>
+          <td class="col-right text-right font-weight-bold">7.5 sec</td>
+        </tr>
+        
+        <tr>
+          <td class="col-left text-left">Acceleration 1/4 mile</td>
+          <td class="col-right text-right font-weight-bold">16 sec</td>
+        </tr>
+
+        <tr>
+          <td class="col-left text-left">Mile Range</td>
+          <td class="col-right text-right font-weight-bold">368.00</td>
+        </tr>
+
+        <tr>
+          <td class="col-left text-left">Towing Capacity</td>
+          <td class="col-right text-right font-weight-bold">5000 Lbs</td>
+        </tr>
+
+        <tr>
+          <td class="col-left text-left">Seating</td>
+          <td class="col-right text-right font-weight-bold">5-7</td>
+        </tr>
+
+        <tr>
+          <td class="col-left text-left">Drive</td>
+          <td class="col-right text-right font-weight-bold">4WD</td>
+        </tr>
+
+        <tr>
+          <td class="col-left text-left">Tire Size</td>
+          <td class="col-right text-right font-weight-bold">P245/60SR20</td>
+        </tr>
+
+        <tr>
+          <td class="col-left text-left">MSRP</td>
+          <td class="col-right text-right font-weight-bold">$49,865</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> <!-- /Bottom -->
+</section>
+
+<section class="showcase">
+  <div class="showcase-img text-center my-5">
+      <img src="img/s1.jpg" class="img-fluid" alt="Responsive image">
+  </div>
+  
+  <div class="showcase-img text-center my-5">
+      <img src="img/s2.jpg" class="img-fluid" alt="Responsive image">
+  </div>
+  
+  <div class="showcase-img text-center my-5">
+      <img src="img/s3.jpg" class="img-fluid" alt="Responsive image">
+  </div>
+  
+  <div class="showcase-img text-center my-5">
+      <img src="img/s4.jpg" class="img-fluid" alt="Responsive image">
+  </div>
+  
+  <div class="showcase-img text-center my-5">
+      <img src="img/s5.jpg" class="img-fluid" alt="Responsive image">
+  </div>
+  
+  <div class="showcase-img text-center my-5">
+      <img src="img/s6.jpg" class="img-fluid" alt="Responsive image">
+  </div>
+  
+  <div class="showcase-img text-center my-5">
+      <img src="img/s7.jpg" class="img-fluid" alt="Responsive image">
+  </div>
+  
+  <div class="showcase-img text-center my-5">
+      <img src="img/s8.jpg" class="img-fluid" alt="Responsive image">
+  </div>
+
+  <div class="showcase-description">
+
+  </div>
+</section>
+
+
   <script src="https://kit.fontawesome.com/7d996e448d.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
