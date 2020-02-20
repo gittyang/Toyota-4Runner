@@ -52,6 +52,7 @@
 
 body {
   background-color: black;
+  color: white;
 }
 
 /* ---LANDING SECTION--- */
@@ -155,3 +156,13 @@ animation-duration: 1.5s; */
 /* .fade {
   opacity: 0;
 } */
+
+#closingImg {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/closing.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+}
