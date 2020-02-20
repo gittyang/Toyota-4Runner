@@ -106,13 +106,13 @@ body {
   animation: moveUp 1.5s ease-in-out 0s forwards;
 }
 #lb-bottom .lbSecond {
-  animation-delay: .4s;
+  animation-delay: .3s;
 }
 #lb-bottom .lbThird {
-  animation-delay: .8s;
+  animation-delay: .6s;
 }
 #lb-bottom .lbFourth {
-  animation-delay: 1.2s;
+  animation-delay: .9s;
 }
 
 
@@ -120,10 +120,6 @@ body {
 
 
 /*  --- VideoStats SECTION--- */
-#video-stats {
-  border: 2px solid red;
-  /* height: 1200px; */
-}
 
 .video-stats-top iframe {
   pointer-events: none;
@@ -139,15 +135,15 @@ body {
 
 /* ---Showcase Section--- */
 .showcase {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   position: relative;
 }
 
 .showcase-img {
-border: 2px solid green;
+/* border: 2px solid green; */
 width: 1200px;
-animation-name: moveUp;
-animation-duration: 1.5s;
+/* animation-name: moveUp;
+animation-duration: 1.5s; */
 }
 
 .showcase-description {
@@ -155,3 +151,7 @@ animation-duration: 1.5s;
   position: absolute;
   top: 550px;
 }
+
+/* .fade {
+  opacity: 0;
+} */
