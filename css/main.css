@@ -52,7 +52,7 @@
 
 body {
   background-color: black;
-  color: white;
+  color: black;
 }
 
 /* ---LANDING SECTION--- */
@@ -91,7 +91,7 @@ body {
   width: 100%;
   height: 100vh;
   background-image: url('../img/landing.jpg');
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
@@ -114,10 +114,7 @@ body {
 }
 #lb-bottom .lbFourth {
   animation-delay: .9s;
-}
-
-
-/* ---LANDING SECTION END--- */
+} /* ---/LANDING SECTION--- */
 
 
 /*  --- VideoStats SECTION--- */
@@ -125,8 +122,6 @@ body {
 .video-stats-top iframe {
   pointer-events: none;
 }
-
-
 
 #stats-table {
   max-width: 600px;
@@ -151,11 +146,63 @@ animation-duration: 1.5s; */
   width: 1000px;
   position: absolute;
   top: 550px;
+} /* ---/Showcase Section--- */
+
+
+/* Scroll Slide Gallery Section*/
+.leftTriangle {
+  position: relative;
 }
 
-/* .fade {
-  opacity: 0;
-} */
+.leftTriangle::before,
+.leftTriangle::after {
+  content: '';
+  width: 75px;
+  height: 75px;
+  background: #f7f7f7;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.leftTriangle::before {
+  bottom: 50%;
+  transform: skew(-35deg);
+}
+
+.leftTriangle::after {
+  top: 50%;
+  transform: skew(35deg);
+}
+
+.rightTriangle {
+  position: relative;
+}
+
+.rightTriangle::before,
+.rightTriangle::after {
+  content: '';
+  width: 75px;
+  height: 75px;
+  background: #f7f7f7;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.rightTriangle::before {
+  bottom: 50%;
+  transform: skew(-145deg);
+}
+
+.rightTriangle::after {
+  top: 50%;
+  transform: skew(145deg);
+}
+
+.z2 {
+  z-index: 2;
+}
 
 #closingImg {
   width: 100%;
@@ -166,3 +213,4 @@ animation-duration: 1.5s; */
   background-repeat: no-repeat;
   color: black;
 }
+
