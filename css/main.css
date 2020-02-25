@@ -149,7 +149,7 @@ animation-duration: 1.5s; */
 } /* ---/Showcase Section--- */
 
 
-/* Scroll Slide Gallery Section*/
+/* ---Scroll Slide Gallery Section--- */
 .leftTriangle {
   position: relative;
 }
@@ -202,6 +202,11 @@ animation-duration: 1.5s; */
 
 .z2 {
   z-index: 2;
+  /* font-size: 1.5rem; */
+}
+
+.bd{
+  vertical-align: middle;
 }
 
 #closingImg {
@@ -212,5 +217,23 @@ animation-duration: 1.5s; */
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
+} /* /Scroll Slide Gallery Section*/
+
+
+/* ---Footer--- */
+.v-divider {
+  margin: 0 10px;
+  width: 1px;
+  border-left: 1px solid grey;
 }
 
+.footer-copyright p {
+  font-size: 14px;
+}
+
+.px {
+  margin: 0;
+}
+.pd {
+  padding: 0;
+}
