@@ -128,10 +128,6 @@ body {
 
 /*  --- VideoStats SECTION--- */
 
-.video-stats-top iframe {
-  pointer-events: none;
-}
-
 #stats-table {
   max-width: 600px;
   background-color: black;
@@ -156,6 +152,7 @@ width: 1200px;
 
 /* ---Scroll Slide Gallery Section--- */
 .slide{
+  /* border: 1px solid cyan; */
   height: 350px;
 }
 
